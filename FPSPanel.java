@@ -19,7 +19,7 @@ class FPSPanel extends JPanel implements Runnable {
         Thread.sleep(1000L);
         lblFPS.setText(String.valueOf(currentFPS) + " FPS");
         currentFPS = 0;
-      } catch (InterruptedException e) { }
+      } catch (InterruptedException e) { break; }
     }
   }
   
